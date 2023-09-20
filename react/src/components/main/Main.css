@@ -1,0 +1,83 @@
+/* main */
+main {
+  /* margin-bottom: 130px; */
+  font-size: 24px;
+  line-height: normal;
+}
+
+.input-container .input-txt {
+  margin-bottom: 30px;
+}
+
+.input-container .input-num {
+  margin-bottom: 115px;
+}
+
+.input-container input {
+  width: 228px;
+  height: 57px;
+  border-radius: 7px;
+  margin: 0 17px;
+  padding: 17px;
+  text-align: center;
+  box-sizing: border-box;
+  background: #fff;
+  font-size: 24px;
+}
+
+.input-container .input-btn {
+  margin-bottom: 147px;
+  padding: 21px 49px;
+  border-radius: 56px;
+  background-color: #fcee21;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  color: #5b2386;
+  font-family: "GmarketSansBold";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+}
+
+.input-container .input-btn::after {
+  content: "";
+  width: 64px;
+  height: 72px;
+  background: url("../../imgs/hand.png");
+  position: absolute;
+  top: 20%;
+  right: -70px;
+}
+
+.result-container {
+  margin-bottom: 130px;
+}
+
+.result-container p strong {
+  margin: 0 12px;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.go-btn,
+.share-btn {
+  margin-top: 127px;
+  padding: 21px 49px;
+  border-radius: 56px;
+  background-color: #fcee21;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  color: #5b2386;
+  font-family: "GmarketSansBold";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.share-btn {
+  margin-left: 18px;
+  background-color: #fff;
+}

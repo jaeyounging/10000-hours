@@ -1,0 +1,65 @@
+/* header */
+header {
+  margin-bottom: 102px;
+}
+
+.title {
+  position: relative;
+}
+
+.title .title-img {
+  position: relative;
+  max-width: 564px;
+  z-index: 10; /* 유지보수를 위해 10단위로 함 */
+}
+
+/* <img> 태그에는 내용이 없기때문에 가상요소 사용 불가 */
+.title::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 본인의 사이즈만큼 땡김 */
+  width: 225px;
+  height: 225px;
+  background: url("../../imgs/title_bg.png") center;
+}
+
+.title-txt {
+  margin-top: 125px;
+  max-width: 486px;
+}
+
+.description {
+  max-width: 480px;
+  margin: 78px auto 102px;
+  font-size: 18px;
+  line-height: normal;
+  position: relative;
+}
+
+.description-strong {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.description::before,
+.description::after {
+  content: "";
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.description::before {
+  left: 0;
+  background: url("../../imgs/txt-left.png") no-repeat;
+}
+
+.description::after {
+  right: 0;
+  background: url("../../imgs/txt-right.png") no-repeat;
+}
